@@ -4,24 +4,26 @@ __Classify__ your user
 ## Purpose
 
 Classified.js adds classes to the `<html>` element based on the user's environment. Those classes can
-then be used by CSS or JavaScript to customize the user's experience. See Usage below.
+then be used by CSS or JavaScript to customize the user's experience. See __Usage__ and __Class Reference__ below.
 ## Usage
 
-1. 	Add the script to the top of your `<head>`. This library has no dependencies, but because
-	CSS and JavaScript may depend on it, it should be included before all other CSS and JavaScript.
+1. 	Add the script to your `<head>`. This library has no dependencies, and so may be included anywhere before the
+	CSS and JavaScript that depends on it.
 		
 		<script type="text/javascript" src="classified.js"></script>
 		
 2.	Modify CSS rules for specific user environments by prepending the appropriate Classified 
-	class name. The following code changes the bottom margin for the `.container` element when 
-	viewed in Internet Explorer 7 from 20px to 10px:
+	class name. The following CSS changes the `margin-bottom` style for the `.container` class from `20px` to `10px` when 
+	viewed in Internet Explorer 7:
 		
 		.container 		{margin-bottom: 20px;}
 		.ie7 .container {margin-bottom: 10px;}
+		
+	Always declare all modified styles after the original style.
 
 3.	Conditionally run JavaScript code for specific user environments. The following code adds 
 	`touchend` events to all buttons if the user is using an iOS or Android device. (For simplicity,
-	I assume jQuery is in use here):
+	this example assumes jQuery is in use):
 	
 		<script type="text/javascript">
 			if ($("html").hasClass("ios") || $("html").hasClass("android")) {
@@ -37,7 +39,7 @@ then be used by CSS or JavaScript to customize the user's experience. See Usage 
 			<input type="button" value="the last button" />
 		</form>
 		
-## Classes
+## Class Reference
 	
 ### Desktop Operating Systems
 *	__mac__ Denotes a user running Mac OS X
