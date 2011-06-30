@@ -66,7 +66,7 @@ then be used by CSS or JavaScript to customize the user's experience. See __Usag
 #### Internet Explorer
 *	__ie__ Denotes a user running some version of Internet Explorer
 *	__ie5_5, ie6, ..., ie9__ Denotes a specific version of Internet Explorer
-*	__lt-ie5, lt-ie5_5, ..., lt-ie10 Denotes all versions of Internet Explorer BEFORE a certain version.
+*	__lt-ie5, lt-ie5_5, ..., lt-ie10__ Denotes all versions of Internet Explorer BEFORE a certain version.
 	For example, `lt-ie8` denotes all versions of Internet Explorer before Internet Explorer 8.
 	
 #### Firefox
