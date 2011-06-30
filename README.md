@@ -1,6 +1,6 @@
 # Classified.js
 
-__Classify__ your user
+__Classify__ your user 
 ## Purpose
 
 Classified.js adds classes to the `<html>` element based on the user's environment. Those classes can
