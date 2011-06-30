@@ -52,8 +52,10 @@ var classified = (function () {
             case 3:
                 theClass += " ff3 lt-ff4 lt-ff5";
                 break;
+			case 5:
+				theClass += " ff5 lt-ff6";
             case 4:
-                theClass += " ff4 lt-ff5";
+                theClass += " ff4 lt-ff5 lt-ff6";
                 break;
             case 2:
                 theClass += " ff2 lt-ff3 lt-ff4 lt-ff5";
@@ -66,6 +68,7 @@ var classified = (function () {
         }
         html.className += theClass;
     } else if ((/AppleWebKit/i).test(ua)) {
+    	theClass += " js webkit";
         if ((/Mobile/i).test(ua)) {
             if ((/iPhone/i).test(ua)) {
                 if ((/iPod/i).test(ua)) {
@@ -83,9 +86,9 @@ var classified = (function () {
         }
 
         if ((/Chrome/i).test(ua)) {
-            theClass += " js webkit chrome";
+            theClass += " chrome";
         } else if ((/Safari/i).test(ua)) {
-            theClass += " js webkit safari";
+            theClass += " safari";
         }
         html.className += theClass;
     } else if ((/Opera/i).test(ua)) {
