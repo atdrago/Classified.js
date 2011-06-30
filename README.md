@@ -20,6 +20,7 @@ then be used by CSS or JavaScript to customize the user's experience. See Usage 
 3.	Conditionally run JavaScript code for specific user environments. The following code adds 
 	`touchend` events to all buttons if the user is using an iOS or Android device. (For simplicity,
 	I assume jQuery is in use here):
+	
 		<script type="text/javascript">
 			if ($("html").hasClass("ios") || $("html").hasClass("android")) {
 				$("input[type=button]").live("touchend", function () {
@@ -33,6 +34,7 @@ then be used by CSS or JavaScript to customize the user's experience. See Usage 
 			<input type="button" value="my soul" />
 			<input type="button" value="the last button" />
 		</form>
+		
 ## Classes
 	
 ### Desktop Operating Systems
