@@ -9,11 +9,13 @@ then be used by CSS or JavaScript to customize the user's experience. See Usage 
 
 1. 	Add the script to the top of your `<head>`. This library has no dependencies, but because
 	CSS and JavaScript may depend on it, it should be included before all other CSS and JavaScript.
+		
 		<script type="text/javascript" src="classified.js"></script>
 		
 2.	Modify CSS rules for specific user environments by prepending the appropriate Classified 
 	class name. The following code changes the bottom margin for the `.container` element when 
 	viewed in Internet Explorer 7 from 20px to 10px:
+		
 		.container 		{margin-bottom: 20px;}
 		.ie7 .container {margin-bottom: 10px;}
 
