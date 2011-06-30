@@ -1,10 +1,10 @@
 # Classified.js
 
+__Classify__ your user
 ## Purpose
 
 Classified.js adds classes to the `<html>` element based on the user's environment. Those classes can
 then be used by CSS or JavaScript to customize the user's experience. See Usage below.
-
 ## Usage
 
 1. 	Add the script to the top of your `<head>`. This library has no dependencies, but because
@@ -33,8 +33,7 @@ then be used by CSS or JavaScript to customize the user's experience. See Usage 
 			<input type="button" value="my soul" />
 			<input type="button" value="the last button" />
 		</form>
-
-## Classified.js Class Reference
+## Classes
 	
 ### Desktop Operating Systems
 *	__mac__ Denotes a user running Mac OS X
@@ -88,5 +87,5 @@ but had no use for the extra JavaScript optimization that [HeadJS](http://headjs
 and found that [HeadJS](http://headjs.com/ "HeadJS"), at the time, caused frequent errors in Internet Explorer 6 
 which made sites nearly unusable. 
 
-I created Classified.js because I wanted the `html` class simplicity of [HeadJS](http://headjs.com/ "HeadJS") without
-the dynamic JavaScript loading bloat and errors.
+I created Classified.js because I wanted the simplicity of customizing an experience from classes on the `<html>` 
+element without the dynamic JavaScript loading bloat and errors of [HeadJS](http://headjs.com/ "HeadJS").
